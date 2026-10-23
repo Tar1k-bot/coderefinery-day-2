@@ -9,6 +9,5 @@ def subtract(left, right):
 def test_add():
     assert add(3, 4) == 7
 
-
-# def test_subtract():
-#     assert subtract(3, 4) == -1
+def test_subtract():
+    assert subtract(3, 4) == -1
