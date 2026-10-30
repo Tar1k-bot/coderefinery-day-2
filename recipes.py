@@ -10,12 +10,6 @@ def adjust_ingredient_amount(amount: float, factor: float) -> float:
     if amount < 0 or factor <= 0:
         raise ValueError("Кількість та коефіцієнт мають бути додатними")
     
-    # НАВМИСНА ЛОГІЧНА ПОМИЛКА:
-    # Якщо кількість інгредієнта рівна 0 (наприклад, "дрібка солі за смаком" або 0 грам),
-    # код помилково повертає 1.0 замість 0.0.
-    if amount == 0:
-        return 1.0
-
     return amount * factor
 
 
